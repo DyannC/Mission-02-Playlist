@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="musicGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffe066"></stop>
+      <stop offset="0.45" stop-color="#a3a1f7"></stop>
+      <stop offset="0.8" stop-color="#00bfae"></stop>
+      <stop offset="1" stop-color="#f6ae2d"></stop>
+    </linearGradient>
+  </defs>
+  <g>
+    <path d="M30 10V24.5A5.5 5.5 0 1 1 27 30V15H15V27.5A5.5 5.5 0 1 1 12 33V10H30Z" fill="url(#musicGrad)" stroke="url(#musicGrad)" stroke-width="2.2" stroke-linejoin="round"></path>
+  </g>
+</svg>

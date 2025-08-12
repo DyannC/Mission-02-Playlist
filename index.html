@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dyann's Winter Playlist 2025</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Fonts for a modern look -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main CSS file for all styles -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Favicon (tab icon) -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <!-- =========================
+        JavaScript for all logic/interactivity
+    ============================ -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- =========================
+        Loader (shows on page load)
+    ============================ -->
+    <div class="music-loader" id="musicLoader">
+      <div class="music-loader-content">
+        <div class="music-note">🎵</div>
+        <div class="eq-bars">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="loader-text">Loading your playlist...</div>
+      </div>
+    </div>
+
+    <!-- =========================
+        Floating animated shapes for background
+    ============================ -->
+    <div class="shapes">
+      <div class="note">&#119070;</div>
+      <div class="note note2" style="top: 80vh; left: 60vw">&#119082;</div>
+      <div class="circle"></div>
+      <div class="circle circle2"></div>
+    </div>
+
+    <!-- =========================
+        Dark/Light Theme Toggle Switch
+    ============================ -->
+    <!-- This checkbox and label switch between light and dark mode (handled in CSS and JS) -->
+    <input type="checkbox" id="toggle" class="toggle-theme" />
+    <label for="toggle" class="toggle-label">
+      <span class="sun">&#9728;</span>
+      <span class="moon">&#9789;</span>
+    </label>
+
+    <!-- =========================
+        All main content goes inside this wrapper
+    ============================ -->
+    <div class="allcontent">
+      <!-- =========================
+            Playlist Header
+        ============================ -->
+      <header>
+        <h1>Dyann's Top Tracks</h1>
+        <p>Winter Playlist 2025</p>
+      </header>
+
+      <!-- =========================
+            About section
+        ============================ -->
+      <div class="about">
+        <div class="about-icons">
+          <span class="wave-icon icon-gold" style="--i: 0">🎵</span>
+          <span class="wave-icon icon-teal" style="--i: 1">🎶</span>
+          <span class="wave-icon icon-purple" style="--i: 2">🎧</span>
+          <span class="wave-icon icon-orange" style="--i: 3">🎷</span>
+          <span class="wave-icon icon-white" style="--i: 4">🎼</span>
+        </div>
+        <h2>About This Playlist</h2>
+        <p>
+          There's nothing better than a relaxing playlist to set the mood.<br />
+          Whenever I’m feeling down, I turn to these chill tracks for a little
+          comfort. Perfect for slow mornings, rainy afternoons, or just curling
+          up with a warm drink.<br />
+          It’s all about feeling cozy, recharging, and letting the music lift
+          your spirits. Loaded with top hits. Ideal for study sessions, road
+          trips, or those cozy rainy days!
+        </p>
+      </div>
+
+      <!-- =========================
+            "Now Playing" area
+        ============================ -->
+      <section class="now-playing">
+        <div class="equalizer">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <p>Now Playing: <strong>“Apocalypse” - Cigarettes After Sex</strong></p>
+      </section>
+
+      <!-- =========================
+            Add Song Form
+            (User can add a new song to the playlist)
+        ============================ -->
+      <div class="add-song-form">
+        <!-- Song title input -->
+        <input id="newTitle" type="text" placeholder="Song Title" />
+        <!-- Artist input -->
+        <input id="newArtist" type="text" placeholder="Artist" />
+        <!-- Lyric input (optional) -->
+        <input id="newLyric" type="text" placeholder="Lyric (optional)" />
+        <!-- Image file input (just a string/path, not an upload) -->
+        <input
+          id="newImage"
+          type="text"
+          placeholder="Image file (e.g. images/mycover.jpg)"
+        />
+        <!-- Add Song button -->
+        <button id="addSongBtn">Add Song</button>
+        <!--
+                NOTE: The JavaScript will use the IDs above to grab input values!
+                The form does NOT actually submit anywhere.
+            -->
+      </div>
+
+      <!-- =========================
+            Playlist Songs Section
+            (All song cards will be generated here by JavaScript)
+        ============================ -->
+      <main class="playlist">
+        <!--
+                This will be filled by JS using <div class="song-card"> for each song.
+                No need to put any hardcoded songs here!
+            -->
+      </main>
+
+      <!-- =========================
+            Stats Section (auto-generated by JS)
+        ============================ -->
+      <!--
+            JS will create a <div id="playlist-stats"></div> and put it after the playlist,
+            showing total plays, likes, and songs.
+        -->
+
+      <!-- =========================
+            Footer
+        ============================ -->
+      <footer>
+        <p>Made by Dyann | School Project 2025 🎵</p>
+      </footer>
+    </div>
+  </body>
+</html>
