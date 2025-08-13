@@ -79,6 +79,7 @@ window.addEventListener("DOMContentLoaded", function () {
       const title = document.getElementById("newTitle").value.trim();
       const lyric = document.getElementById("newLyric").value.trim();
       const image = document.getElementById("newImage").value.trim();
+      const artist = document.getElementById("newArtist").value.trim();
 
       // Check if required fields are filled
       // We validate: need a title and artist.
